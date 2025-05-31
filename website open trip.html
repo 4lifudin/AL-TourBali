@@ -1,59 +1,252 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Trip - Jelajah Bali</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Promo Liburan ke Bali</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      color: #333;
+    }
+
+    header {
+      background-image: url('https://source.unsplash.com/1600x600/?bali,sunset');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    .harga-promo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #ffe600;
+    }
+
+    .harga-asli {
+      text-decoration: line-through;
+      color: #ddd;
+      margin-left: 10px;
+    }
+
+    .promo-note {
+      font-style: italic;
+      color: #f0f0f0;
+      margin-top: 1rem;
+    }
+
+    section {
+      background: #ffffffcc;
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 1000px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #ff5733;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .destinasi-item {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .destinasi-item:hover {
+      transform: scale(1.03);
+    }
+
+    .destinasi-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .destinasi-item .desc {
+      padding: 1rem;
+    }
+
+    .destinasi-item .desc h4 {
+      margin-top: 0;
+      color: #ff5733;
+    }
+
+    .kontak {
+      text-align: center;
+    }
+
+    .wa-button {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #25D366;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: background-color 0.3s;
+    }
+
+    .wa-button:hover {
+      background-color: #1ebe5d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #fff;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Liburan Hemat & Seru ke Bali!</h1>
+    <p><span class="harga-promo">Rp600.000</span><span class="harga-asli">Rp800.000</span></p>
+    <p class="promo-note">Jelajahi keindahan Bali dengan paket spesial! Cocok untuk keluarga, komunitas, dan liburan sekolah.</p>
+  </header>
 
-    <header>
-        <h1>Open Trip: Jelajah Bali</h1>
-        <p>Liburan seru bareng teman!</p>
-    </header>
+  <section class="info">
+    <h2>Paket 3 Hari 3 Malam</h2>
+    <ul>
+      <li>🚌 Transportasi ELF (20 Penumpang)</li>
+      <li>🕒 Durasi: 3 Hari 3 Malam</li>
+      <li>💰 Harga Promo: <strong>Rp600.000</strong> per orang</li>
+      <li>📍 Termasuk tiket masuk dan parkir destinasi</li>
+      <li>📷 Foto-foto seru di tempat hits Bali</li>
+    </ul>
+  </section>
 
-    <nav>
-        <ul>
-            <li><a href="Daftar destinasi.html">Destinasi</a></li>
+<section class="destinasi">
+  <h2>Destinasi Favorit & Deskripsi</h2>
+  <div class="gallery">
+    <div class="destinasi-item">
+      <img src="https://source.unsplash.com/400x250/?kuta,beach" alt="Pantai Kuta">
+      <div class="desc">
+        <h4>Pantai Kuta</h4>
+        <p>Pantai populer dengan pasir putih dan ombak ideal untuk berselancar serta menikmati matahari terbenam.</p>
+      </div>
+    </div>
+    <div class="destinasi-item">
+      <img src="https://source.unsplash.com/400x250/?bedugul,lake" alt="Danau Bedugul">
+      <div class="desc">
+        <h4>Danau Bedugul</h4>
+        <p>Danau indah di dataran tinggi dengan suasana sejuk, cocok untuk relaksasi dan wisata alam.</p>
+      </div>
+    </div>
+    <div class="destinasi-item">
+      <img src="https://source.unsplash.com/400x250/?lovina,dolphin" alt="Pantai Lovina">
+      <div class="desc">
+        <h4>Pantai Lovina</h4>
+        <p>Titik keberangkatan melihat lumba-lumba di pagi hari dengan perahu tradisional nelayan.</p>
+      </div>
+    </div>
+    <div class="destinasi-item">
+      <img src="https://source.unsplash.com/400x250/?pandawa,beach" alt="Pantai Pandawa">
+      <div class="desc">
+        <h4>Pantai Pandawa</h4>
+        <p>Tersembunyi di balik tebing, pantai ini menawarkan pemandangan dramatis dan air laut jernih.</p>
+      </div>
+    </div>
+    <div class="destinasi-item">
+      <img src="https://source.unsplash.com/400x250/?waterfall,bali" alt="Air Terjun Dedari">
+      <div class="desc">
+        <h4>Air Terjun Dedari</h4>
+        <p>Air terjun alami yang tenang dan eksotis, cocok untuk foto alam dan bermain air.</p>
+      </div>
+    </div>
+    <div class="destinasi-item">
+      <img src="https://source.unsplash.com/400x250/?panglipuran,village" alt="Desa Panglipuran">
+      <div class="desc">
+        <h4>Desa Wisata Panglipuran</h4>
+        <p>Desa tradisional dengan nuansa budaya Bali kuno dan tata letak yang tertata rapi dan bersih.</p>
+      </div>
+    </div>
+    <div class="destinasi-item">
+      <img src="https://source.unsplash.com/400x250/?jogger,bali" alt="Jogger Bali">
+      <div class="desc">
+        <h4>Jogger Bali</h4>
+        <p>Pusat oleh-oleh terkenal dengan desain kaos kata-kata lucu dan unik khas Bali.</p>
+      </div>
+    </div>
+    <div class="destinasi-item">
+      <img src="https://source.unsplash.com/400x250/?krishna,souvenir" alt="Krishna Oleh-Oleh">
+      <div class="desc">
+        <h4>Krishna Oleh-Oleh</h4>
+        <p>Tempat belanja oleh-oleh lengkap, murah, dan nyaman untuk wisatawan sebelum pulang.</p>
+      </div>
+    </div>
+    <div class="destinasi-item">
+      <img src="https://source.unsplash.com/400x250/?bangli,bali" alt="Alun-Alun Bangli">
+      <div class="desc">
+        <h4>Alun-Alun Bangli</h4>
+        <p>Ruang publik luas dengan suasana santai, cocok untuk jalan sore dan foto-foto santai.</p>
+      </div>
+    </div>
+    <div class="destinasi-item">
+      <img src="https://source.unsplash.com/400x250/?gianyar,bali" alt="Alun-Alun Gianyar">
+      <div class="desc">
+        <h4>Alun-Alun Gianyar</h4>
+        <p>Tempat rekreasi warga lokal dengan suasana ramai dan kuliner malam yang menggoda.</p>
+      </div>
+    </div>
+    <div class="destinasi-item">
+      <img src="https://source.unsplash.com/400x250/?kecak,dance" alt="Tari Kecak">
+      <div class="desc">
+        <h4>Tari Kecak</h4>
+        <p>Pertunjukan seni ikonik Bali yang menceritakan kisah Ramayana dengan tarian api dan paduan suara khas.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <li><a href="Paket Trip.html">Paket Trip</a></li>
-            <li><a href="https://wa.me/6285854426314?text=Halo,%20saya%20ingin%20memesan%20Paket%20Pantai%20Selatan%20Bali" class="btn" target="_blank">Kontak</a></li>
-        </ul>
-    </nav>
 
-    <section id="destinasi">
-        <h2>Destinasi Populer</h2>
-        <div class="card">
-            <img src="/Users/admin/Documents/WEBSITE/tibumana-waterfall-ubud.jpeg" alt="UBUD">
-            <h3>Tibumana Waterfall</h3>
-            <p>Nikmati pesona alam ubud untuk melepaskan beban pikiranmu. </p>
-        </div>
-        <div class="card">
-            <img src="/Users/admin/Documents/WEBSITE/suwat-waterfall.jpeg" alt="Bromo">
-            <h3>Suwat Waterfall</h3>
-            <p>Nikmati pesona alam ubud untuk melepaskan beban pikiranmu.</p>
-        </div>
-    </section>
 
-    <section id="paket">
-        <h2>Paket Trip</h2>
-        <ul>
-            <li>3D2N Raja Ampat - Start from Rp 3.500.000</li>
-            <li>2D1N Bromo Midnight - Start from Rp 800.000</li>
-            <li>4D3N Labuan Bajo - Start from Rp 4.200.000</li>
-        </ul>
-    </section>
+  
 
-    <section id="kontak">
-        <h2>Hubungi Kami</h2>
-        <p>WhatsApp: 0812-3456-7890</p>
-        <p>Email: opentrip@jelajah.com</p>
-    </section>
+  <section class="kontak">
+    <h2>Info & Pemesanan</h2>
+    <p>Jangan tunda lagi! Yuk, booking sekarang juga!</p>
+    <a href="https://wa.me/6285854426314" class="wa-button" target="_blank">Pesan via WhatsApp</a>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Open Trip Jelajah Indonesia</p>
-    </footer>
-
+  <footer>
+    <p>&copy; 2025 Promo Bali Tour | Website dirancang untuk memudahkan liburan Anda!</p>
+  </footer>
 </body>
 </html>
